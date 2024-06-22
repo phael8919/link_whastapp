@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            margin: 50px  auto;
+            width: 42%;
+            padding: 10px;
+            border: 1.8px  solid  green;
+            border-radius: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .titulo{
+            width: 100%;            
+            display: flex;
+            flex-flow: row wrap;
+            height: 90px;
+            background-color: green;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+
+        
+        .titulo img{
+            height: 80px;
+            width: 15%;
+            border-radius: 10%;
+            margin: 5px 0 5px 10px;
+        }
+
+        .titulo p{
+            width: 75%;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            margin: auto 10px;
+            text-align: center;
+            color: white;
+            font-size: 2.8rem;
+        }
+
+        .texto-explicativo{
+            text-align: center;
+            padding: 5px 0;
+            font-size: 1.5rem;
+            color: green;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+        }
+        .num-tel{
+            display: flex;
+            flex-flow: row nowrap;            
+        }
+
+        .num-tel #ddd{
+            width: 20%;
+            margin-right: 1%;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            border: 1.8px  solid  green;
+            border-radius: 5px;
+            color: green;
+        }
+
+        .num-tel #phone{
+            width: 79%;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            border: 1.8px  solid  green;
+            border-radius: 5px;
+            color: green;
+        }
+
+        .botao-enviar{
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            background-color: green;
+            border: 1.8px  solid  green;
+            border-radius: 5px;
+            color:white;
+            cursor: pointer;
+            transition: 0.8s;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+        .botao-enviar:hover{
+            background-color: white;
+            color: green;
+        }       
+
+        .link_gerado{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+            background-color: rgb(38, 176, 176);
+            color: aliceblue;
+            border-radius: 5px;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .copiar-link{
+            margin-top: 10px;                       
+            background-color: green;  
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            justify-content: center;          
+            color: aliceblue;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 5px;
+            border: 2px solid green;
+            cursor: pointer;
+        }
+
+        .copiar-link:hover{
+            background-color: aliceblue;
+            color: green;
+            border: 2px solid green;
+            transition: 0.5s;
+        }
+
+        .link-direto{
+            margin-top: 10px; 
+            text-align: center;
+            display: flex;
+            justify-content: center;                           
+            background-color: rgb(38, 176, 176);
+            border: 2px solid  rgb(38, 176, 176);
+            color: aliceblue;            
+            padding: 5px 0;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .link-direto:hover{
+            background-color: aliceblue;
+            color: rgb(38, 176, 176);
+            border: 2px solid  rgb(38, 176, 176);
+            transition: 0.5s;
+        }
+
+        @media (max-width:576px){
+            .container{
+                width: 92%;
+            }
+            .titulo img{            
+                width: 18%;
+            }
+            .titulo  p{
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width:576px)  and (max-width:920px){
+            .container{
+                width: 80%;
+            }
+            .titulo img{            
+                width: 15%;
+            }
+
+            .titulo  p{
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width:920px)  and (max-width:1200px){
+            .container{
+                width: 60%;
+            }
+            .titulo img{            
+                width: 15%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo">
+            <img src="https://lh5.googleusercontent.com/2DMmQa2WwmgMREjl3W309PHgJQ7peBr8Gzz0-DTZSNEilyBYKkGe5DVxLFkcpICIfMLw4vP7j86Gev3kN5znR4o=w1280" alt="whatsapp">
+            <p>GERADOR DE LINK</p>
+        </div>
+
+        <div class="texto-explicativo">
+            (Insira o DDD e o nº de telefone)
+        </div>
+
+        <div class="num-tel">
+            <select name="" id="ddd">
+                <option value="DDD">DDD</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>        
+                <option value="21">21</option>
+                <option value="22">22</option>        
+                <option value="24">24</option>        
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>       
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>        
+                <option value="37">37</option>
+                <option value="38">38</option>        
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>        
+                <option value="51">51</option>        
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>        
+                <option value="61">61</option>
+                <option value="62">62</option>
+                <option value="63">63</option>
+                <option value="64">64</option>
+                <option value="65">65</option>
+                <option value="66">66</option>
+                <option value="67">67</option>
+                <option value="68">68</option>
+                <option value="69">69</option>        
+                <option value="71">71</option>       
+                <option value="73">73</option>
+                <option value="74">74</option>
+                <option value="75">75</option>
+                <option value="76">76</option>
+                <option value="77">77</option>        
+                <option value="79">79</option>        
+                <option value="81">81</option>
+                <option value="82">82</option>
+                <option value="83">83</option>
+                <option value="84">84</option>
+                <option value="85">85</option>
+                <option value="86">86</option>
+                <option value="87">87</option>
+                <option value="88">88</option>
+                <option value="89">89</option>        
+                <option value="91">91</option>
+                <option value="92">92</option>
+                <option value="93">93</option>
+                <option value="94">94</option>
+                <option value="95">95</option>
+                <option value="96">96</option>
+                <option value="97">97</option>
+                <option value="98">98</option>
+                <option value="99">99</option>
+            </select>    
+        
+            <input type="number" id="phone" name="phone" pattern="[0-9]{9}" required minlength="9" maxlength="9" placeholder="xxxx-xxxxx" max="9">
+        </div>
+                
+        <button class="botao-enviar" onclick="gerar_link()">Gerar Link</button>
+    
+        <div id="container-link">
+    
+        </div>        
+        
+        <div id="container-opcoes1">
+
+        </div>
+
+        <div id="container-opcoes2">
+
+        </div>
+       
+    </div>
+    
+
+    <script>
+        
+        //Função para criar o link
+        function gerar_link(){
+            let url = 'https://api.whatsapp.com/send/?phone=55'
+            let ddd = document.getElementById('ddd')
+            let num = document.getElementById('phone')
+            let link = url+ddd.value+num.value      
+            
+            let container_link = document.getElementById('container-link')
+            let copiar = document.getElementById('container-opcoes1') 
+            let link_tab = document.getElementById('container-opcoes2')
+
+            if(ddd.value == 'DDD'){
+                alert("Insira o DDD do seu estado.")
+                ddd.focus()               
+            }else if(num.value.length < 9 || num.value == '' || num.value.length > 9){
+                alert("Insira o número do seu celular.\nExemplo: 99999-9999")
+                num.focus()
+            }else{
+                container_link.innerHTML = `<div class="link_gerado" id="link_gerado"> ${link}</div>`
+                copiar.innerHTML = `<div class="copiar-link" id="copiar-link" onclick="copiar()">COPIAR LINK</div>`
+                link_tab.innerHTML = `<a href="${link}" target="_blank" class="link-direto">IR AO LINK</a>`
+            }
+        }
+
+        //Função para copiar o link criado
+        function copiar(){
+            let valor = document.getElementById("link_gerado").textContent            
+            navigator.clipboard.writeText(valor)
+            alert('Link copiado!')
+        }
+        
+
+    </script>
+</body>
+</html>

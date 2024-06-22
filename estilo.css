@@ -1,0 +1,185 @@
+
+.container{
+    margin: 50px  auto;
+    width: 42%;
+    padding: 10px;
+    border: 1.8px  solid  green;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.titulo{
+    width: 100%;            
+    display: flex;
+    flex-flow: row wrap;
+    height: 90px;
+    background-color: green;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+
+.titulo img{
+    height: 80px;
+    width: 15%;
+    border-radius: 10%;
+    margin: 5px 0 5px 10px;
+}
+
+.titulo p{
+    width: 75%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin: auto 10px;
+    text-align: center;
+    color: white;
+    font-size: 2.8rem;
+}
+
+.texto-explicativo{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.num-tel{
+    display: flex;
+    flex-flow: row nowrap;            
+}
+
+.num-tel #ddd{
+    width: 20%;
+    margin-right: 1%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    border: 1.8px  solid  green;
+    border-radius: 5px;
+    color: green;
+}
+
+.num-tel #phone{
+    width: 79%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    border: 1.8px  solid  green;
+    border-radius: 5px;
+    color: green;
+}
+
+.botao-enviar{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+    background-color: green;
+    border: 1.8px  solid  green;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    transition: 0.8s;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.botao-enviar:hover{
+    background-color: white;
+    color: green;
+}       
+
+.link_gerado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(38, 176, 176);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.copiar-link{
+    margin-top: 10px;                       
+    background-color: green;  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;          
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+.copiar-link:hover{
+    background-color: aliceblue;
+    color: green;
+    border: 2px solid green;
+    transition: 0.5s;
+}
+
+.link-direto{
+    margin-top: 10px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;                           
+    background-color: rgb(38, 176, 176);
+    border: 2px solid  rgb(38, 176, 176);
+    color: aliceblue;            
+    padding: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.link-direto:hover{
+    background-color: aliceblue;
+    color: rgb(38, 176, 176);
+    border: 2px solid  rgb(38, 176, 176);
+    transition: 0.5s;
+}
+
+@media (max-width:576px){
+    .container{
+        width: 92%;
+    }
+    .titulo img{            
+        width: 18%;
+    }
+    .titulo  p{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:576px)  and (max-width:920px){
+    .container{
+        width: 80%;
+    }
+    .titulo img{            
+        width: 15%;
+    }
+
+    .titulo  p{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:920px)  and (max-width:1200px){
+    .container{
+        width: 60%;
+    }
+    .titulo img{            
+        width: 15%;
+    }
+}
+
